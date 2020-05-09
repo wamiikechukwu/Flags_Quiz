@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="23sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff">
+
+
+        <Button
+            android:id="@+id/buton_1"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/buton_2"
+            app:layout_constraintTop_toBottomOf="@id/buton_7" />
+
+        <Button
+            android:id="@+id/buton_2"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/buton_1"
+            app:layout_constraintTop_toBottomOf="@id/buton_8"
+            app:layout_constraintRight_toLeftOf="@id/buton_3"/>
+
+        <Button
+            android:id="@+id/buton_3"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/buton_2"
+            app:layout_constraintRight_toLeftOf="@id/buton_4"
+            app:layout_constraintTop_toBottomOf="@id/buton_9"/>
+
+        <Button
+            android:id="@+id/buton_4"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/buton_3"
+            app:layout_constraintRight_toLeftOf="@id/buton_5"
+            app:layout_constraintTop_toBottomOf="@id/buton_10"/>
+
+        <Button
+            android:id="@+id/buton_5"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/buton_4"
+            app:layout_constraintRight_toLeftOf="@id/buton_6"
+            app:layout_constraintTop_toBottomOf="@id/buton_11"/>
+
+        <Button
+            android:id="@+id/buton_6"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/buton_5"
+            app:layout_constraintTop_toBottomOf="@id/buton_12"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <Button
+            android:id="@+id/buton_7"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            app:layout_constraintBottom_toTopOf="@id/buton_1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/buton_8"/>
+
+        <Button
+            android:id="@+id/buton_8"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            app:layout_constraintBottom_toTopOf="@id/buton_2"
+            app:layout_constraintLeft_toRightOf="@id/buton_7"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/buton_9"/>
+
+        <Button
+            android:id="@+id/buton_9"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            app:layout_constraintBottom_toTopOf="@id/buton_3"
+            app:layout_constraintLeft_toRightOf="@id/buton_8"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/buton_10"/>
+
+        <Button
+            android:id="@+id/buton_10"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            app:layout_constraintBottom_toTopOf="@id/buton_4"
+            app:layout_constraintLeft_toRightOf="@id/buton_9"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/buton_11"/>
+
+        <Button
+        android:id="@+id/buton_11"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/btn_height"
+        app:layout_constraintBottom_toTopOf="@id/buton_5"
+        app:layout_constraintLeft_toRightOf="@id/buton_10"
+        app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/buton_12"/>
+
+        <Button
+            android:id="@+id/buton_12"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            app:layout_constraintBottom_toTopOf="@id/buton_6"
+            app:layout_constraintLeft_toRightOf="@id/buton_11"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
